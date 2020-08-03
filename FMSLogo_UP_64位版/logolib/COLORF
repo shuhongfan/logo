@@ -1,0 +1,6 @@
+to COLORF :N
+  IF (OR :N<>INT :N :N>15 :N<0)[MAKE :N 1]
+  SETFC :N
+end
+
+bury "COLORF

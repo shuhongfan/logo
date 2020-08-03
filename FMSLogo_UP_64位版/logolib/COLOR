@@ -1,0 +1,19 @@
+to COLOR 
+  cs ht        
+  for[i 0 15][   
+    seth 0 setpc 0        
+    pu setxy :i*30-210 -30 pd   
+    repeat 2[fd 60 rt 90 fd 20 rt 90]
+    pu rt 45 fd 10 pd      
+    setfc :i fill         
+    pu lt 45 fd 76     
+    setx xcor-10      
+    pd rt 90 label :i  
+    ]
+  pu setxy -115 120 pd
+  label "FMSLogo_Unocode_PCLogo
+  pu setxy -100 90 pu
+  label [杨逸霖 林正山 老师编制]
+end
+
+bury "COLOR
